@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: var(--color-font);
+	list-style: none;
+}
+
+body {
+ 	background: url(media/background.png);
+ 	width: 90%;
+ 	max-width: 1000px;
+ 	margin: 1em;
+	
+}
+
+:root{
+	--color-font: #fff;
+	--color-background: #0151d5;
+	--color-paraguas: #ff85d5;
+	--color-background-claro: #2BADA8;
+	--color-background-oscuro: #104C3A;
+	--color-epic: violet;
+	--color-super: #febd1a;
+}
+
+
+/*     HEADER     */
+
+
+.header {
+	margin: -1em;
+}
+
+.header__nav {
+	background: var(--color-background-claro);
+	position: fixed;
+	width: 100%;
+	border: 2px solid var(--color-background-oscuro);
+	z-index: 1000;
+
+}
+
+.header__nav-ul {
+	list-style: none;
+}
+
+.nav__flex {
+	display: flex;
+	padding: .7em;
+	justify-content: flex-end;
+}
+
+.nav__ul-li {
+	color: var(--color-font);
+}
+
+.nav__a {
+	text-decoration: none;
+	padding: 10px;
+}
+
+.nav__a:hover {
+	background: var(--color-background-oscuro);
+	text-decoration: underline;	
+}
+
+
+/*    BRAWLER   */
+
+.brawler {
+	margin-top: 1.5em;
+}
+
+.brawler__name {
+	font-family: 'Chelsea Market', cursive;
+	letter-spacing: 3px;
+	display: flex;
+	position: relative;
+	left: 350px;
+	position: relative;
+	height: 100%;
+	max-width: 150px;
+}
+
+.brawler__type-rank {
+	font-family: 'Chelsea Market', cursive;
+	letter-spacing: 3px;
+	position: relative;
+	min-width: 150px;
+	max-width: 150px;
+}
+
+.rank {
+	font-family: times new roma;
+	color: var(--color-epic);
+	position: relative;
+	left: 50px;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 2em;
+	text-transform: uppercase;
+} 
+
+.brawler__img {
+	position: relative;
+	min-width: 300px;
+	width: 300px;
+	min-height: 50px;
+	height: 360px;
+}
+
+.brawler__main-cite {
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.brawler__p {
+	width: 80%;
+}
+
+.epic {
+	text-transform: uppercase;
+	color: violet;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+/*BARRA*/
+hr {
+	position: relative;
+	background: violet;
+	align-content: center;
+	height: 1px;
+	width: 100%;
+	border: 2px solid purple;
+	margin-left: 20px;
+}
+
+
+/*ATTACK SUPER GADGET SPOWER'S*/
+
+.content-asg {
+	margin-top: 2em;
+}
+
+.attack__title,
+.super__title,
+.gadget__title,
+.spower__title1,
+.spower__title2{
+	text-align: center;
+	font-family: 'Chelsea Market';
+	letter-spacing: 2px;
+}
+
+.attack,
+.super,
+.gadget,
+.spower-1,
+.spower-2 {
+	padding: 20px;
+}
+
+.attack {
+	margin-top: 50px;
+}
+
+.super {
+}
+
+.gadget {
+	margin-top: 50px;
+}
+
+.spower-1 {
+	margin-left: 50px;
+	width: 100%;
+}
+
+.spower-2 {
+	margin-right: 50px;
+	width: 100%;
+}

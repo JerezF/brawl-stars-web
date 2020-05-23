@@ -1,0 +1,114 @@
+:root{
+	--color-font: #fff;
+	--color-background: #0151d5;
+	--color-paraguas: #ff85d5;
+	--color-background-claro: #327C66;
+	--color-background-oscuro: #113F31 ;
+	--color-epic: purple;
+	--color-super: #febd1a;
+}
+/*    TODO   */
+
+.container__grid {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+
+	grid-template-areas: "header 		header 			header"
+						 "brawler  		brawler 		brawler"
+						 "content-asg  	content-asg 	content-asg"
+						 "star 			star 			star";
+}
+
+
+.container__grid .header{
+	grid-area: header;
+}
+
+.container__grid .brawler {
+	grid-area: brawler;
+}
+
+.container__grid .content-asg{
+	grid-area: content-asg;
+}
+
+.container__grid .star-power {
+	grid-area: star;
+}
+
+
+/*GRID BRAWLER*/
+.brawler {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, minmax(100px, auto));
+
+	grid-template-areas: "bname 	bname 	img"
+						 "type 		type  	img"
+						 "bmain 	bmain 	img"
+						 "bphar 	bphar 	bphar" 
+}
+
+
+.brawler_name {
+	grid-area: bname;
+	grid-column: span 2;	
+}
+
+.brawler__type-rank {
+	grid-area: type ;
+	justify-self: center;
+	align-self: center;
+}
+
+.brawler__img {
+	grid-area: img;
+	justify-self: center;
+}
+
+.brawler__main-cite {
+	grid-area: bmain;
+	justify-self: center;
+}
+
+.brawler__p {
+	grid-area: bphar;
+}
+
+
+/*ATTACK SUPER GADGET*/
+
+.content-asg {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto); 
+
+	grid-template-areas: "attack 	super 	gadget"
+						 "super1 	. 		super2"
+}
+
+.attack {
+	grid-area: attack;
+}
+
+.super {
+	grid-area: super;
+}
+
+.gadget {
+	grid-area: gadget;
+}
+
+.spower-1 {
+	grid-area: super1;
+	justify-self: center;
+	align-self: center;
+}
+
+.spower-2 {
+	grid-area: super2;
+}
